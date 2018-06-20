@@ -43,7 +43,10 @@ function askForActivity() {
 	                top: top,
 	                width: w,
 	                height: h
-	            });
+				});
+				chrome.tabs.onRemoved.addListener(function(tabId, removeInfo) {
+					
+				});
 	        });
 	    }
 	});
