@@ -31,7 +31,7 @@ function askForActivity() {
 			var top = 20; 
 	    	
 	    	chrome.tabs.create({
-	            url: chrome.extension.getURL('dialog.html'),
+	            url: chrome.extension.getURL('/src/view/dialog.html'),
 	            active: false
 	        }, function(tab) {
 	            // After the tab has been created, open a window to inject the tab
