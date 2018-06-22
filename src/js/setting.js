@@ -10,6 +10,11 @@ var Setting = {
 		chrome.storage.sync.set({'frequency': frequency}, function() {
 	     	console.log('Settings saved');
 		});
+		chrome.runtime.sendMessage(
+			{
+				message: "settings saved"
+			}
+		);
 	},
 	
 	getFrequency: function(callback) {

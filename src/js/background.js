@@ -7,6 +7,9 @@ chrome.storage.onChanged.addListener(function(changes, namespace) {
 });
 
 chrome.alarms.onAlarm.addListener(askForActivity);
+chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
+	console.log("Got Message: " + JSON.stringify(message) + " from " + JSON.stringify(sender));
+});
 
 function changePeriod() {
 	chrome.storage.sync.get(['frequency'], function(data) {
