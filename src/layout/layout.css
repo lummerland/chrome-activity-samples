@@ -1,0 +1,28 @@
+h1 { 
+    font-size: 15px; 
+}
+input {
+    width: 240px;
+}
+table {
+    min-width: 350px;
+}
+table .nodata {
+    color: #666666;
+    font-style: italic;
+    font-weight: bold;
+}
+table .time {
+    font-weight: bold;
+    width: 50px;
+}
+table th {
+    text-align: left;
+}
+button {
+    background-color: #CCCCCC;
+    color: #444444;
+    border: 1px solid #444444;
+    margin: 10px;
+    float: right;
+}

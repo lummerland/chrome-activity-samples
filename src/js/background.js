@@ -25,9 +25,9 @@ function askForActivity() {
 	chrome.alarms.get('alarm', function (alarm) {
 		if (alarm) {
 			
-			var w = 500;
-			var h = 300;
-			var left = (screen.width)-(w + 50);
+			var w = 300;
+			var h = 100;
+			var left = (screen.width)-(w + 40);
 			var top = 20; 
 	    	
 	    	chrome.tabs.create({

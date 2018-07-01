@@ -1,15 +1,29 @@
 'use strict';
 
+var timeout;
+
 document.addEventListener('DOMContentLoaded', function() {
 	console.log("loaded dialog");
-	var now = new Date();
-	document.getElementById('time').textContent = now.toTimeString();
-	setTimeout(window.close, 10000);
+    
+    document.getElementById('entry').focus();
+
+    // auto close on no action
+    timeout = setTimeout(saveAndClose, 10000);
 });
 
 document.onkeydown = function(evt) {
+    // do not auto close on key action
+    clearTimeout(timeout);
+
     evt = evt || window.event;
     if (evt.keyCode == 27) {
-        window.close();
+        saveAndClose();
     }
+};
+
+function saveAndClose() {
+    Entries.add(
+        document.getElementById('entry').value
+    );
+    setTimeout(window.close, 200); // TODO: switch to messaging
 };
