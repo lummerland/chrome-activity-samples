@@ -7,11 +7,11 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 	var saveAction = document.getElementById('save');
-	
 	saveAction.onclick = function(element) {
 		Setting.setFrequency(
 			document.getElementById('frequency').value
 		);
+		close();
 	}
 
 });
