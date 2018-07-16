@@ -11,18 +11,27 @@ var Entries = {
 		};
 		
 		var now = new Date();
+		var groupkey = now.toLocaleDateString();
 		var entry = {
-			"date": now.toLocaleDateString(),
-			"time": now.getHours() + ":" + now.getMinutes(),
+			"date": groupkey,
+			"time": (now.getHours() < 10 ? '0' : '') + now.getHours() + 
+					":" + 
+					(now.getMinutes() < 10 ? '0' : '') + now.getMinutes(),
 			"text": text
 		};
+		console.log("created entry " + JSON.stringify(entry));
+		
 		this.all(function(entries) {
 			if(!entries) {
-				entries = [];
+				entries = {};
 			}
-			entries.push(entry);
+			if(!entries.hasOwnProperty(groupkey)) {
+				entries[groupkey] = [entry];
+			} else {
+				entries[groupkey].push(entry);
+			}
 			chrome.storage.sync.set({'entries': JSON.stringify(entries)}, function() {
-				console.log('Saved: ' + JSON.stringify(entries));
+				console.log('Saved: ' + entries);
 		   });
 		})
 	},
@@ -34,7 +43,7 @@ var Entries = {
 				callback(JSON.parse(data['entries']));
 			} else {
 				console.log('No entries retrieved');
-				callback([]);
+				callback({});
 			}
 		});
 		

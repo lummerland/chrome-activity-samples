@@ -12,6 +12,10 @@ table .nodata {
     font-style: italic;
     font-weight: bold;
 }
+table .date {
+    font-weight: bold;
+    font-size: 1.2em;
+}
 table .time {
     font-weight: bold;
     width: 50px;
