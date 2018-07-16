@@ -9,7 +9,7 @@ This extension turns time recording around: instead of remembering yourself to t
 
 ## How?
 
-Just define the timeframe for being asked about the actual activity in the options. Then a small form will popup periodically. It will automatically go away after some seconds or by using the ESC key. Write a little note into the field if you want, it last's just a moment. If you don't (e.g. because your activity has not changed since the last record) it's just fine.
+Just define the timeframe for being asked about the actual activity in the options. Then a small form will popup periodically. It will automatically go away after some seconds or by using the ESC key. Write a little note into the field if you want, it lasts just a moment. If you don't (e.g. because your activity has not changed since the last record) it's just fine.
 
 ## Motivation
 
