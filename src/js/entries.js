@@ -12,6 +12,7 @@ var Entries = {
 		
 		var now = new Date();
 		var entry = {
+			"date": now.toLocaleDateString(),
 			"time": now.getHours() + ":" + now.getMinutes(),
 			"text": text
 		};
