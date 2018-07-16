@@ -28,7 +28,6 @@ This extension is not available via Google Web Store since it is not considered 
 
 Right now there are some ideas I will work on in the future ... probably ;)
 
-* I want to see, to which date the activity belongs (right now only times are saved).
 * I want to copy the recorded data to put it into other tools.
 * I want some nice, simple and easy UI.
 * I want to use this extension on my Firefox as well.
