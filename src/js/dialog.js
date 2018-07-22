@@ -16,7 +16,7 @@ document.onkeydown = function(evt) {
     clearTimeout(timeout);
 
     evt = evt || window.event;
-    if (evt.keyCode == 27) {
+    if (evt.keyCode == 27 || evt.keyCode == 13) {
         saveAndClose();
     }
 };
