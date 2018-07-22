@@ -17,7 +17,8 @@ var Entries = {
 			"time": (now.getHours() < 10 ? '0' : '') + now.getHours() + 
 					":" + 
 					(now.getMinutes() < 10 ? '0' : '') + now.getMinutes(),
-			"text": text
+			"text": text,
+			"timestamp": now.getTime()
 		};
 		console.log("created entry " + JSON.stringify(entry));
 		
