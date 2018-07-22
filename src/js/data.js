@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
 				output += "</tr>";	
 				for (var i = 0; i < data[date].length; i++) {
 					output += "<tr>";
-					output += "<td class='time'>" + data[date][i].time + "</td>";
+					output += "<td class='time'>" + moment(data[date][i].timestamp).format("LT") + "</td>";
 					output += "<td>" + data[date][i].text + "</td>";
 					output += "</tr>";
 				}
