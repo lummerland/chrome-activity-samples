@@ -1,0 +1,14 @@
+{
+    "name": "chrome-activity-samples",
+    "version": "1.0.0",
+    "description": "Let your browser record the activities you want to remember tonight.",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lummerland/chrome-activity-samples.git"
+    },
+    "author": "lummerland",
+    "license": "MIT",
+    "devDependencies": {
+        "moment": "~2.22"
+    }
+}
