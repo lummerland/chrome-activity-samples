@@ -18,11 +18,16 @@ Once I read an interesting article (https://ralfw.de/2017/08/zeiterfassung-mit-a
 * the frustration about existing time recording tools
 * the idea behind push versus pull time recording
 
-The domain seems simple enough to use it in training projects. Since I wanted to learn a bit about the development of browser extensions it seemed to be a good way to combine learning and doing something useful :).
+The domain seems simple enough to use it in a small programming training projects. Since I wanted to learn a bit about the development of browser extensions and Javascript it seems to be a good way to combine learning and doing something useful.
 
 ## Installation
 
-This extension is not available via Google Web Store since it is not considered ready for being published. If you want to give it a try you need to clone the repository and add the code manually to the browser as described e.g. here: https://developer.chrome.com/extensions/getstarted
+This extension is not available via Google Web Store since it is not considered ready for being published. If you want to give it a try you need to clone the repository, run 
+
+	npm install
+	npm run build
+
+and add the generated folder `dist` manually to the browser as described e.g. here: https://developer.chrome.com/extensions/getstarted
 
 ## Future
 
@@ -31,7 +36,7 @@ Right now there are some ideas I will work on in the future ... probably ;)
 * I want to copy the recorded data to put it into other tools.
 * I want some nice, simple and easy UI.
 * I want to use this extension on my Firefox as well.
-* I want to learn more about extension development :)
+* I want to learn more about extension development.
 * I want to install this extension via the browsers web stores.
 
 ## License
