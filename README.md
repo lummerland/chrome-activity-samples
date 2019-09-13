@@ -22,7 +22,14 @@ The domain seems simple enough to use it in training projects. Since I wanted to
 
 ## Installation
 
-This extension is not available via Google Web Store since it is not considered ready for being published. If you want to give it a try you need to clone the repository and add the code manually to the browser as described e.g. here: https://developer.chrome.com/extensions/getstarted
+This extension is not available via Google Web Store since it is not considered ready for being published. If you want to give it a try you need to clone the repository and build it:
+
+```
+npm install
+npm run build
+```
+
+Add the dist directory manually to the browser as described e.g. here: https://developer.chrome.com/extensions/getstarted
 
 ## Future
 

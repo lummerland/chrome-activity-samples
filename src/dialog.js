@@ -1,17 +1,16 @@
-'use strict';
-
+import { Entries } from './entries';
 var timeout;
 
-document.addEventListener('DOMContentLoaded', function() {
-	console.log("loaded dialog");
-    
+document.addEventListener('DOMContentLoaded', function () {
+    console.log("loaded dialog");
+
     document.getElementById('entry').focus();
 
     // auto close on no action
     timeout = setTimeout(saveAndClose, 10000);
 });
 
-document.onkeydown = function(evt) {
+document.onkeydown = function (evt) {
     // do not auto close on key action
     clearTimeout(timeout);
 
