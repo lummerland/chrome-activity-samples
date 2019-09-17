@@ -1,13 +1,9 @@
-chrome.alarms.clearAll((cleared) => {
-	console.log("was cleared: ", cleared);
-});
 chrome.runtime.onInstalled.addListener(changePeriod);
-chrome.runtime.onInstalled.addListener(simpleAlarm);
 chrome.storage.onChanged.addListener(changePeriod);
 
-//chrome.alarms.onAlarm.addListener(askForActivity);
 chrome.alarms.onAlarm.addListener((alarm) => {
-	console.log("alarm: " + alarm.name);
+	console.log("got alarm: " + alarm.name);
+	askForActivity();
 });
 
 function simpleAlarm() {
