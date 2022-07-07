@@ -9,6 +9,6 @@
     "author": "lummerland",
     "license": "MIT",
     "devDependencies": {
-        "moment": "~2.22"
+        "moment": "~2.29"
     }
 }
